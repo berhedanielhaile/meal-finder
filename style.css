@@ -254,9 +254,19 @@ h2 {
     margin: 3rem 1rem;
     padding: 1rem;
   }
+  .search {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .search-btn,
+  .random-btn {
+    width: 44px;
+    height: 44px;
+  }
   .meal-container {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
   }
   .meal-img {
     width: 14rem;
@@ -264,10 +274,49 @@ h2 {
   }
   .card {
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
   }
   .card-img {
     width: 100%;
     height: auto;
+  }
+  .card-description {
+    padding: 1.2rem;
+  }
+  .show-meal {
+    padding: 0 0.5rem;
+  }
+  .meal-instruction {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    margin: 1.5rem 0.5rem;
+    padding: 0.6rem;
+  }
+  .search-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+  }
+  .meal-img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card-description {
+    padding: 1rem;
+  }
+  .meal-instruction {
+    padding: 1rem;
   }
 }
 
