@@ -324,7 +324,31 @@ h2 {
     height: 42px;
     padding: 0.35rem;
   }
+  .search-btn i,
+  .random-btn i,
+  .fa-search,
+  .fa-random {
+    font-size: 1.1rem;
+  }
   .search {
     gap: 0.4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .search-input {
+    font-size: 1.2rem;
+  }
+  .search-btn,
+  .random-btn {
+    width: 38px;
+    height: 38px;
+    padding: 0.25rem;
+  }
+  .search-btn i,
+  .random-btn i,
+  .fa-search,
+  .fa-random {
+    font-size: 1rem;
   }
 }
