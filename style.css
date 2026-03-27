@@ -278,8 +278,8 @@ h2 {
   }
   .fa-search,
   .fa-random {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
   }
   .random-btn {
     padding: 0.4rem;
@@ -323,13 +323,13 @@ h2 {
   }
   .search-input {
     width: 100%;
-    padding: 0.8rem 8rem 0.8rem 2rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
   }
   .fa-search,
   .fa-random {
-    height: 2em;
-    width: 2em;
+    height: 1.8rem;
+    width: 1.8rem;
   }
   .random-btn {
     padding: 0.3rem;
@@ -351,12 +351,12 @@ h2 {
 
 @media (max-width: 360px) {
   .search-input {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   .fa-search,
   .fa-random {
-    height: 2em;
-    width: 2em;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   .random-btn {
     padding: 0.25rem;
@@ -368,12 +368,12 @@ h2 {
 
 @media (max-width: 320px) {
   .search-input {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
   }
   .fa-search,
   .fa-random {
-    height: 2em;
-    width: 2em;
+    height: 1.4rem;
+    width: 1.4rem;
   }
   .random-btn {
     padding: 0.2rem;
