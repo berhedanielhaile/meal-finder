@@ -33,7 +33,8 @@ body {
   align-items: center;
 }
 
-html, body {
+html,
+body {
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -129,20 +130,6 @@ h2 {
   height: 20rem;
   border-radius: 50%;
 }
-.search-btn,
-.random-btn {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #f9f9f9;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.search-btn i,
-.random-btn i {
-  font-size: 1.4rem;
-}
 .meal-instruction {
   padding: 4rem;
 }
@@ -181,7 +168,6 @@ h2 {
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-
 
 .card p {
   font-size: 1.6rem;
@@ -283,10 +269,13 @@ h2 {
     flex-direction: column;
     gap: 0.65rem;
   }
-  .search-btn,
+  .fa-search,
+  .fa-random {
+    height: 2rem;
+    width: 2rem;
+  }
   .random-btn {
-    width: 44px;
-    height: 44px;
+    padding: 0.4rem;
   }
   .meal-container {
     flex-direction: column;
@@ -330,6 +319,14 @@ h2 {
     padding: 0.8rem 1rem;
     font-size: 1.3rem;
   }
+  .fa-search,
+  .fa-random {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .random-btn {
+    padding: 0.3rem;
+  }
   .meal-img {
     width: 10.5rem;
     height: 10.5rem;
@@ -345,64 +342,17 @@ h2 {
   }
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .container {
-    margin: 2rem 0.8rem;
-    padding: 0.8rem;
-  }
-  .search {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-  .search-input {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    font-size: 1.4rem;
-  }
-  .search-btn,
-  .random-btn {
-    width: 48px;
-    height: 48px;
-    padding: 0.45rem;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .search-btn i,
-  .random-btn i {
-    font-size: 1.2rem;
-  }
-  .meal-img {
-    width: 11rem;
-    height: 11rem;
-  }
-  .meal-description h2 {
-    font-size: 1.8rem;
-  }
-  .meal-instruction {
-    padding: 1rem;
-  }
-}
-
 @media (max-width: 360px) {
   .search-input {
     font-size: 1.3rem;
   }
-  .search-btn,
-  .random-btn {
-    width: 42px;
-    height: 42px;
-    padding: 0.35rem;
-  }
-  .search-btn i,
-  .random-btn i,
   .fa-search,
   .fa-random {
-    font-size: 1.1rem;
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+  .random-btn {
+    padding: 0.25rem;
   }
   .search {
     gap: 0.4rem;
@@ -413,16 +363,12 @@ h2 {
   .search-input {
     font-size: 1.2rem;
   }
-  .search-btn,
-  .random-btn {
-    width: 38px;
-    height: 38px;
-    padding: 0.25rem;
-  }
-  .search-btn i,
-  .random-btn i,
   .fa-search,
   .fa-random {
-    font-size: 1rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  .random-btn {
+    padding: 0.2rem;
   }
 }
