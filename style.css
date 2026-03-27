@@ -25,12 +25,17 @@ body {
 }
 .container {
   padding: 2rem;
-  margin: 10rem;
-  min-width: 1200px;
+  margin: 6rem auto;
+  width: min(100%, 1200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+html, body {
+  min-width: 320px;
+  overflow-x: hidden;
 }
 h1 {
   font-size: 6rem;
