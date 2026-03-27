@@ -130,9 +130,9 @@ h2 {
   height: 20rem;
   border-radius: 50%;
 }
-.meal-instruction {
-  padding: 4rem;
-}
+/* .meal-instruction {
+  
+} */
 .show-detail {
   text-decoration: none;
   border: none;
