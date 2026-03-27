@@ -1,0 +1,12 @@
+{
+  "name": "meal-finder",
+  "version": "1.0.0",
+  "description": "A meal finder application",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "build": "index.html"
+  }
+}

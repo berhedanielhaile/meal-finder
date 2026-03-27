@@ -1,0 +1,222 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #298fe2; */
+  background-image:
+    linear-gradient(rgba(41, 143, 226, 0.3), rgba(41, 143, 226, 0.3)),
+    url("pranjall-kumar-sejqj6Eaqe8-unsplash.jpg");
+
+  background-size: cover;
+}
+.container {
+  padding: 2rem;
+  margin: 10rem;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  color: rgba(blue, 0.3);
+  font-family: cursive;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  /* text-transform: uppercase; */
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin: 5rem;
+}
+.search-input {
+  background-color: orangered;
+  width: 50%;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 100px;
+  background-color: #f9f9f9;
+}
+.search-input:focus {
+  outline: none;
+  border: 1px solid #34d6ef;
+}
+.search-btn {
+  border: none;
+  background-color: transparent;
+  margin-left: -4rem;
+
+  display: block;
+}
+.random-btn {
+  border: none;
+  background-color: #f9f9f9;
+  margin-left: 2rem;
+
+  display: block;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.fa-search {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #999;
+}
+.fa-random {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #999;
+}
+.show-search-result {
+  width: 100%;
+  /* height: max-content; */
+  display: none;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding: 5rem 2rem; */
+  box-shadow: 0 2rem 5rem rgba(#000, 0.25);
+  background-color: transparent;
+  border-radius: 100px;
+  flex-wrap: wrap;
+}
+.meal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(237, 222, 212);
+  /* padding: 2rem; */
+  border-radius: 100px;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.meal-container:hover {
+  transform: translateY(-2px);
+}
+.meal-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.meal-instruction {
+  padding: 4rem;
+}
+.show-detail {
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  background-color: #298fe2;
+}
+.show-detail:hover {
+  border-bottom: 1px solid #777;
+  transform: translateY(-1px);
+}
+.show-meal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem 0; */
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  align-self: center;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  /* padding-bottom: 6rem; */
+  border-radius: 9px;
+  box-shadow: 0 4rem 8rem rgba(#000, 0.25);
+  overflow: hidden;
+}
+
+.card p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.card-img {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.card-description {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.ing {
+  background-color: #0f77ccdd;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-color: rgba(#fff, 0.3); */
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2rem 4rem rgba(#000, 0.25);
+  transition: all 0.2s;
+}
+.ing:hover {
+  transform: scale(1.02) translateY(-1px);
+}
+.list-ing {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+.back-to-results {
+  text-decoration: none;
+  padding: 1.2rem;
+  text-align: center;
+  background-color: #298fe2;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.2s;
+}
+.back-to-results:hover {
+  transform: scale(1.02) translateY(-1px);
+}
+.back-to-results:visited,
+.back-to-results:active {
+  transform: scale(0.98) translateY(0px);
+}
