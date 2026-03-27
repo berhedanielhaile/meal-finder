@@ -62,12 +62,10 @@ h2 {
 .search-input {
   background-color: orangered;
   width: 50%;
-  padding: 1.2rem 8rem 1.2rem 2rem;
+  padding: 1.2rem 2rem;
   border: none;
   border-radius: 100px;
   background-color: #f9f9f9;
-  font-size: 1.25rem;
-  position: relative;
 }
 .search-input:focus {
   outline: none;
@@ -76,31 +74,27 @@ h2 {
 .search-btn {
   border: none;
   background-color: transparent;
-  position: absolute;
-  right: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: -4rem;
+
   display: block;
 }
 .random-btn {
   border: none;
   background-color: #f9f9f9;
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 2rem;
+
   display: block;
   border-radius: 50%;
   padding: 0.5rem;
 }
 .fa-search {
-  height: 2em;
-  width: 2em;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: #999;
 }
 .fa-random {
-  height: 2em;
-  width: 2em;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: #999;
 }
 .show-search-result {
@@ -247,6 +241,7 @@ h2 {
   .search {
     margin: 2rem 0;
     gap: 0.6rem;
+    flex-direction: column;
   }
   .search-input {
     width: 100%;
@@ -271,15 +266,13 @@ h2 {
     padding: 1rem;
   }
   .search {
+    flex-direction: column;
     gap: 0.65rem;
-  }
-  .search-input {
-    font-size: 1rem;
   }
   .fa-search,
   .fa-random {
-    height: 2rem;
-    width: 2rem;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   .random-btn {
     padding: 0.4rem;
@@ -320,6 +313,10 @@ h2 {
   .container {
     margin: 1.5rem 0.5rem;
     padding: 0.6rem;
+  }
+  .search {
+    flex-direction: column;
+    gap: 0.6rem;
   }
   .search-input {
     width: 100%;
