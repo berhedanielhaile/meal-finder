@@ -220,3 +220,77 @@ h2 {
 .back-to-results:active {
   transform: scale(0.98) translateY(0px);
 }
+
+/* Responsive media queries */
+@media (max-width: 1024px) {
+  .container {
+    margin: 4rem 2rem;
+    min-width: unset;
+  }
+  .search {
+    margin: 2rem 0;
+    gap: 0.6rem;
+    flex-direction: column;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .meal-container {
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .meal-img {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+  .container {
+    margin: 3rem 1rem;
+    padding: 1rem;
+  }
+  .meal-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .meal-img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .search-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+  .search-btn,
+  .random-btn {
+    padding: 0.5rem;
+  }
+  .meal-img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .meal-description h2 {
+    font-size: 1.8rem;
+  }
+  .meal-instruction {
+    padding: 1rem;
+  }
+}
